@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" href="images/youtube.png" type="image/x-icon">
+    
+
+    <title>Youtube-Clone</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <!---Left-->
+                <button  class="btn-menu">
+                 <i class="fa-solid fa-bars"></i>
+                </button>
+                <img src="images/Yt-logo.jpg" alt="Youtube-Logo"  class="Yt-logo">
+                
+                <!--Center-->
+                <div class="searchbar-btn">
+                    
+                    <input type="search" placeholder="Search" class="search-bar" >
+                    <button class="btn-search" onclick="searchthis()">
+                         <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button  class="btn-menu">
+                      <i class="fa-solid fa-microphone"></i>
+                    </button>
+                </div>
+                <!--Right-->
+                <div class="right-btn">
+                    <button  class="btn-menu">
+                     <i class="fa-solid fa-video"></i>
+                    </button>
+                    <button  class="btn-menu" id="btn-bell">
+                     <i class="fa-regular fa-bell"></i>
+                    </button>
+                    <img src="images/logo2.png" alt="video 1 logo" width="33px" class="logo" id="logo-channel">
+                    
+
+                </div>
+
+                </div>
+
+        </nav>
+    </header>
+    <!--Side Navbar-->
+    <div class="container">
+        <div class="side-navbar">
+            <button class="Home">
+                <i class="fa-solid fa-house home-btn"></i>
+                <p>
+                    Home
+
+                </p>
+                
+            </button>
+            <button class="full">
+                <i class="fa-brands fa-vimeo Full-btn"></i>
+                <p>
+                    Shorts
+
+                </p>
+                
+            </button>
+            <button class="full">
+               <i class="fa-brands fa-hubspot Full-btn"></i>
+                <p>
+                   Subscription
+
+                </p>
+                
+            </button>
+            <hr>
+             <button class="full">
+                
+                <h3>
+                    You   >
+
+                </h3>
+                 <button class="full">
+                <i class="fa-brands fa-napster Full-btn"></i>
+                <p>
+                    Watch History
+
+                </p>
+                 <button class="full">
+                <i class="fa-brands fa-google-play Full-btn"></i>
+                <p>
+                    Playlists
+
+                </p>
+                 <button class="full">
+                <i class="fa-brands fa-watchman-monitoring Full-btn"></i>
+                <p>
+                    Watch Later
+
+                </p>
+                 <button class="full">
+                <i class="fa-brands fa-gratipay Full-btn"></i>
+                <p>
+                    Liked Videos
+
+                </p>
+                 <button class="full">
+                
+                <h4>
+                    Subscriptions
+
+                </h4>
+                 <button class="full">
+                <i class="fas fa-list Full-btn"></i>
+                <p>
+                    All Subscriptions
+
+                </p>
+                <button class="full">
+                <p>
+                    Explore
+
+                </p>
+                <button class="full">
+                <i class="fas fa-fire Full-btn"></i>
+                <p>
+                    Trending
+
+                </p>
+                <button class="full">
+                <i class="fas fa-music Full-btn"></i>
+                <p>
+                   Music
+
+                </p>
+                <button class="full">
+                <i class="fas fa-gamepad Full-btn"></i>
+                <p>
+                    Gaming
+
+                </p>
+                
+
+        </div>
+        <!--Content-->
+        <div class="content">
+            <!--Videos-->
+            <div class="vid">
+                <img src="images/1video.jpg" alt="video1" width="100%" class="thumbnail">
+                <div class="video-assests">
+                    <img src="images/vid1.jpg" alt="video 1 logo" width="33px" class="logo">
+                    <div class="video-content">
+                        <h4 class="video-title">Greatest Journy | in History | Isra Meraj | The Kohistani</h4>
+                        <p class="channel-name">The Kohistani</p>
+                        <p class="video-views">1.5M Views.1 Year ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid">
+                <img src="images/2video.jpg" alt="video1" width="100%" class="thumbnail">
+                <div class="video-assests">
+                    <img src="images/vid2.jpg" alt="video 1 logo" width="33px" class="logo">
+                    <div class="video-content">
+                        <h4 class="video-title">Greatest Journy | in History | Khatta Meetha | </h4>
+                        <p class="channel-name">Shemaroo Comedy</p>
+                        <p class="video-views">5M Views - 3 Year ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid">
+                <img src="images/3video.jpg" alt="video1" width="100%" class="thumbnail">
+                <div class="video-assests">
+                    <img src="images/vid3.jpg" alt="video 1 logo" width="33px" class="logo">
+                    <div class="video-content">
+                        <h4 class="video-title">Greatest Journy | in History | Isra Meraj | The Kohistani</h4>
+                        <p class="channel-name">Dhruv rathee</p>
+                        <p class="video-views">35M Views 1 month ago</p>
+                    </div>
+                </div>
+            </div>
+            <!--Shorts -->
+            <div class="vid">
+                <img src="images/Shorts/roman.png" alt="video1" width="100%" class="thumbnail">
+                <div class="video-assests">
+                    <div class="video-content">
+                        <h4 class="video-title">OH The OTC i Roman i Reigns is i Back!!</h4>
+                        <p class="video-views">2.1M Views</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid">
+                <img src="images/Shorts/short2.png" alt="video1" width="100%" class="thumbnail">
+                <div class="video-assests">
+
+                    <div class="video-content">
+                        <h4 class="video-title">Air India May Face $600M Loss #airindia #pakistan #facts</h4>
+                        <p class="video-views">14M Views</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid">
+                <img src="images/Shorts/short3.png" alt="video1" width="100%" class="thumbnail">
+                <div class="video-assests">
+
+                    <div class="video-content">
+                        <h4 class="video-title">You don’t need PayPal, to receive payments from
+                            your international clients.
+                        </h4>
+                        <p class="video-views">50K Views</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="vid">
+                <img src="images/Shorts/roman.png" alt="video1" width="100%" class="thumbnail">
+                <div class="video-assests">
+                    <div class="video-content">
+                        <h4 class="video-title">OH The OTC i Roman i Reigns is i Back!!</h4>
+                        <p class="video-views">2.1M Views</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid">
+                <img src="images/Shorts/short2.png" alt="video1" width="100%" class="thumbnail">
+                <div class="video-assests">
+
+                    <div class="video-content">
+                        <h4 class="video-title">Air India May Face $600M Loss #airindia #pakistan #facts</h4>
+                        <p class="video-views">14M Views</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid">
+                <img src="images/Shorts/short3.png" alt="video1" width="100%" class="thumbnail">
+                <div class="video-assests">
+
+                    <div class="video-content">
+                        <h4 class="video-title">You don’t need PayPal, to receive payments from
+                            your international clients.
+                        </h4>
+                        <p class="video-views">50K Views</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <!--Videos-->
+            
+            <div class="vid">
+                <img src="images/4.jpg" alt="video1" width="100%" class="thumbnail">
+                <div class="video-assests">
+                    <img src="images/unnamed.jpg" alt="video 1 logo" width="33px" class="logo">
+                    <div class="video-content">
+                        <h4 class="video-title">Greatest Journy | in History | Isra Meraj | The Kohistani</h4>
+                        <p class="channel-name">Zen tv</p>
+                        <p class="video-views">1.5M Views.5 weeks ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid">
+                <img src="images/5video.jpg" alt="video1" width="100%" class="thumbnail">
+                <div class="video-assests">
+                    <img src="images/channels4_profile (5).jpg" alt="video 1 logo" width="33px" class="logo">
+                    <div class="video-content">
+                        <h4 class="video-title">Greatest Journy | in History | Isra Meraj | The Kohistani</h4>
+                        <p class="channel-name">The Kohistani</p>
+                        <p class="video-views">1.5M Views.1 Year ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid">
+                <img src="images/6video.jpg" alt="video1" width="100%" class="thumbnail">
+                <div class="video-assests">
+                    <img src="images/unnamed (2).jpg" alt="video 1 logo" width="33px" class="logo">
+                    <div class="video-content">
+                        <h4 class="video-title">Greatest Journy | in History | Isra Meraj | The Kohistani</h4>
+                        <p class="channel-name">The Kohistani</p>
+                        <p class="video-views">1.5M Views.1 Year ago</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

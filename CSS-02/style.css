@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 18px;
+}
+h1{
+    font-size: 18px;
+    margin: 30px 10px 0 30px ;
+    padding: 5px;
+    color: rgb(6, 6, 255);
+}
+p{
+    margin: 0 10px 20px 30px;
+    padding: 5px;
+   color: black;
+   font-size: 23px;
+   justify-content: center;
+}
+.email{
+    margin: 20px 10px 10px 700px;
+    padding: 20px;
+    display: flex;
+    width: 25%;
+    height: 30%;
+    border-radius: 10px;
+    border-width:0.1px ;
+}
+.email:active{
+    display: flex;
+    border-color: aqua;
+}
+.email:focus{
+    border-color: blue;
+}
+.email:hover{
+    border-color: brown;
+}
